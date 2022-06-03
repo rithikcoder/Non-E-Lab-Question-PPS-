@@ -1,0 +1,114 @@
+Question-3(Unit-2)
+
+Benitta is a School teacher. She has conducted n number of class tests to her students. For
+the internal marks, she has to consider only the best two marks. Help her to automate the
+process by writing a C program.
+
+Solution :-
+
+#include <stdio.h>
+int main()
+{
+   int n,i,a=0,b=0;
+   scanf("%d",&n);
+   int arr[n];
+   for(i=0;i<n;i++){
+       scanf("%d",&arr[i]);
+       if(arr[i]>a){
+          b=a;
+          a=arr[i];
+       }
+   }    
+   printf("%d %d",a,b);
+   return 0;
+}
+
+Question-6(Unit-2)
+
+Mala is studying G-VII. Her class teacher asked her to identify the type of triangle.
+But she doesn’t know the concept of triangle types. Can you help her to identify the triangle
+types based on the values of sides given to mala.
+Hint:
+a. If all the sides are equal then it is an Equilateral Triangle
+b. If two sides are equal then it is a Isosceles Triangle
+c. If no sides are equal then it is a Scalene Triangle
+
+Solution :-
+
+#include <stdio.h>
+int main()
+{
+int arr[3]:
+int 1;
+for (i-0;i<3;i++){
+scan ("*d",&arr[i]):
+)
+1f(arr[0]=-arr[1]&&arr[1]=-arr[2]){
+print ("Equilateral Triangle"):
+else if(arr[0]--arr[1]||arr[1]--arr[2]||arr[0]=-arr[2]){
+print ("Isosceles Triangle"):
+)
+elsef
+printf ("Scalene Triangle");
+)
+return 0;
+
+Question-1(Unit-3)
+
+Stefi is an intern in a Software Company. She finds it difficult to work on strings. She needs
+your help in one of her works in which she has to find the first and last occurrence of a given
+character in a string.
+
+Solution :-
+
+#include <stdio.h>
+void main()
+{
+    int i, count = 0, pos1, pos2;
+    char str[50], key, a[10];
+ 
+    printf("enter the string\n");
+    scanf(" %[^\n]s", str);
+    printf("enter character to be searched\n");
+    scanf(" %c", &key);
+    for (i = 0;i <= strlen(str);i++)
+    {
+        if (key == str[i])
+        {
+            count++;
+            if (count  == 1)
+            {
+                pos1 = i;
+                pos2 = i;
+                printf("%d\n", pos1 + 1);
+            }
+            else 
+            {
+                pos2 = i;
+            }
+        }
+    }
+    printf("%d\n", pos2 + 1);
+}
+
+Question-18(Unit-3)
+
+You have been given 3 integers - l, r and k. Find how many numbers between l and r
+(both inclusive) are divisible by k. You do not need to print these numbers, you just have
+to find their count.
+
+Solution :-
+
+#include <stdio.h>
+int main()
+{
+    int l,r,k,T=0;
+    scanf("%d %d %d",&l,&r,&k);
+    for(int i=1; i<=r; i++){
+        if(i%k == 0){
+           T++;
+        }
+    }
+    printf("%d",T);
+    return 0;
+}
